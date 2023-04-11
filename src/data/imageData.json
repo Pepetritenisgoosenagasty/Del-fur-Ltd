@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "category_id": 1,
+        "category": "Doors",
+        "path": "https://images.unsplash.com/photo-1577670552647-6ce12a463e7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80"
+    },
+    {
+        "id": 2,
+        "category_id": 2,
+        "category": "Wardrobe",
+        "path": "https://images.unsplash.com/photo-1611048268330-53de574cae3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2344&q=80"
+    },
+    {
+        "id": 3,
+        "category_id": 3,
+        "category": "Kitcehn",
+        "path": "https://images.unsplash.com/photo-1588854337236-6889d631faa8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
+    },
+    {
+        "id": 4,
+        "category_id": 4,
+        "category": "Office & Study Room",
+        "path": "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2369&q=80"
+    },
+    {
+        "id": 5,
+        "category_id": 5,
+        "category": "Beds",
+        "path": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
+    },
+    {
+        "id": 6,
+        "category_id": 6,
+        "category": "Others",
+        "path": "https://images.unsplash.com/photo-1504198458649-3128b932f49e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+    },
+    {
+        "id": 7,
+        "category_id": 1,
+        "category": "Doors",
+        "path": "https://images.unsplash.com/photo-1546728682-0b16cf85b8de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=931&q=80"
+    },
+    {
+        "id": 8,
+        "category_id": 2,
+        "category": "Wardrobe",
+        "path": "https://images.unsplash.com/photo-1573311392049-4186e3a47e9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
+    },
+    {
+        "id": 9,
+        "category": "Beds",
+        "category_id": 5,
+        "path": "https://images.unsplash.com/flagged/photo-1556438758-8d49568ce18e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2374&q=80"
+    },
+    {
+        "id": 10,
+        "category_id": 2,
+        "category": "Doors",
+        "path": "https://images.unsplash.com/photo-1592824665737-1202e7191976?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2504&q=80"
+    }
+]

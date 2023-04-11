@@ -23,9 +23,22 @@ export const theme: any = {
       },
       ".custom-card": {
         boxShadow: "0 2px 48px 0 rgba(0, 0, 0, 0.13)",
-        zIndex: 201
+        zIndex: 200
       },
       ".my-prefix-1ig5vnr": {
         zIndex: "39 !important"
+      },
+
+      '.image-container': {
+        overflow: "hidden",
+        borderRadius: 5,
+
+        "img": {
+           transition: "all 0.3s ease-in-out",
+        },
+
+        '&:hover img': {
+          transform: "scale(1.1)",
+        }
       }
     })}  

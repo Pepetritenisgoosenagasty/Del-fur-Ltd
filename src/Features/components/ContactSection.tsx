@@ -13,6 +13,7 @@ import {
   } from '@mantine/core';
 import { IconAt, IconLighter, IconMapPin, IconPhoneCalling, IconSun } from '@tabler/icons-react';
 import { Montserrat } from 'next/font/google';
+import ContactForm from './ContactForm';
 
 //   import bg from './bg.svg';
   
@@ -202,36 +203,7 @@ import { Montserrat } from 'next/font/google';
             {/* <ContactIconsList variant="white" /> */}
           </div>
   
-          <form className={classes.form} onSubmit={(event) => event.preventDefault()}>
-            <Text fz="lg" fw={700} className={classes.title}>
-              Get in touch
-            </Text>
-  
-            <div className={classes.fields}>
-              <SimpleGrid cols={2} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
-                <TextInput label="Your name" placeholder="Your name"  />
-                <TextInput label="Your email" placeholder="hello@mantine.dev" required />
-              </SimpleGrid>
-  
-              <TextInput mt="md" label="Subject" placeholder="Subject" required />
-  
-              <Textarea
-                mt="md"
-                label="Your message"
-                placeholder="Please include all relevant information"
-                minRows={3}
-              />
-  
-              <Group position="right" mt="xl">
-              <button
-              style={montserrat.style}
-              className="px-[25px] py-[15px] text-[#2d3091] border border-[#2d3091] text-[12px] font-[700] hover:bg-[#2d3091] hover:text-white hover:transition-all ease-in-out delay-150"
-            >
-              Send Message
-            </button>
-              </Group>
-            </div>
-          </form>
+         <ContactForm />
         </div>
       </Paper>
     );

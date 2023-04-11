@@ -1,14 +1,14 @@
 import PageTitle from '@/components/PageTitle'
 import AppLayout from '@/components/AppLayout'
-import HomeComponent from '@/Features/Home'
+import AboutComponent from '@/Features/About'
 
 
-export default function Home() {
+export default function About() {
   return (
     <>
-     <PageTitle title='Del-Fur Ltd.' />
+     <PageTitle title='Del-Fur | About Us' />
      <AppLayout>
-      <HomeComponent />
+      <AboutComponent />
      </AppLayout>
     </>
   )
