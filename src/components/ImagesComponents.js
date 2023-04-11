@@ -5,7 +5,7 @@ import PhotoSwipeLightbox from 'photoswipe/lightbox';
 import 'photoswipe/style.css';
 
 
-const ImagesComponents = ({data, galleryID}: any) => {
+const ImagesComponents = ({data, galleryID}) => {
     useEffect(() => {
         let lightbox = new PhotoSwipeLightbox({
           gallery: '#' + galleryID,
@@ -23,7 +23,7 @@ const ImagesComponents = ({data, galleryID}: any) => {
   <div className='pswp-gallery' id={galleryID}>
 
     <SimpleGrid cols={4} spacing="xl" >
-        {data?.map((image: any, index: any) => (
+        {data?.map((image, index) => (
             <motion.div layout initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} transition={{ duration: 0.5}} key={image.id} className="image-container cursor-pointer" >
                 <a
           href={image.path}
