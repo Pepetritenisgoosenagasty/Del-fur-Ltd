@@ -25,8 +25,8 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <section className="py-28">
-        <div className="w-[1170px] mx-auto">
+      <section className="py-28 px-10 lg:px-0">
+        <div className="lg:w-[1170px] mx-auto">
           <SimpleGrid
             cols={3}
             spacing="xl"
@@ -63,7 +63,7 @@ const Contact = () => {
         </div>
       </section>
       <section className="min-h-[400px] pb-20">
-        <div className="w-[800px] m-auto flex">
+        <div className="lg:w-[800px] m-auto flex">
          {/* <div className="w-1/3">
            <p className="mb-[35px] text-[14px] font-[400] text-[#606060] ">Thank you for visiting our website! We are always happy to hear from our visitors and customers. If you have any questions, comments, or feedback, please don&apos;t hesitate to get in touch with us. Our friendly customer support team is available to help you with any queries you may have. You can reach us by phone, email.</p>
          </div> */}

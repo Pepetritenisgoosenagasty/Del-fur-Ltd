@@ -16,7 +16,7 @@ const TeamCard = ({img, name, position}: any) => {
           />
         </div>
         <div className="bg-white py-8 h-[170px] flex">
-          <div className="m-auto flex items-center justify-center flex-col border-r-4 w-full h-full ml-10">
+          <div className="m-auto flex items-center justify-center flex-col border-r-4 w-full h-full ml-10 px-12 lg:px-0">
             <h1 className="text-[16px] font-[700] text-[#1F2128] text-center">
              {name}
             </h1>

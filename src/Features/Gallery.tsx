@@ -33,8 +33,8 @@ const Gallery = () => {
         </div>
       </section>
       <section className='min-h-[500px]'>
-       <div className='w-[1170px] mx-auto py-20'>
-          <p className='text-center text-[20px] font-[500] mb-4'>Take a look at some of our customized products built for companies and institutions</p>
+       <div className='lg:w-[1170px] mx-auto py-20 '>
+          <p className='text-center text-[20px] font-[500] mb-4 px-10 lg:px-0'>Take a look at some of our customized products built for companies and institutions</p>
          <FilterButtons data={imageGallery} setfilteredCat={setfilteredCat}/>
          <div className='py-12'>
         

@@ -10,16 +10,18 @@ import { ContactSection } from "./components/ContactSection";
 import MissionSection from "./components/MissionSection";
 import TeamSection from "./components/TeamSection";
 import WhoWeAreSection from "./components/WhoWeAreSection";
+import { useRouter } from "next/router";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 const Home = () => {
+  const router = useRouter()
   return (
     <>
-      <section className="w-full h-[70vh] bg-[#f5f5f5] bg-[url(../assets/images/banner-bg.png)] bg-left bg-no-repeat bg-center">
-        <div className="w-[1170px] mx-auto flex items-center h-full">
-          <div className="w-1/3">
-            <h1 className="text-[32px] font-[500] text-[#1F2128] ">
+      <section className="w-full py-20 lg:py-0 lg:h-[700px] bg-[#f5f5f5] bg-[url(../assets/images/banner-bg.png)] bg-left bg-no-repeat bg-center">
+        <div className="lg:w-[1170px] lg:mx-auto flex items-center h-full">
+          <div className="w-full px-10 lg:px-0 lg:w-1/3 ">
+            <h1 className="text-[25px] md:text-[32px] font-[500] text-[#1F2128] ">
               A Tradition of Joinery Excellence
             </h1>
             <p className="text-[16px] font-[400] text-[#606060] my-[35px]">
@@ -30,11 +32,12 @@ const Home = () => {
             <button
               style={montserrat.style}
               className="px-[25px] py-[15px] rounded-md mt-4 text-[#2d3091] border border-[#2d3091] text-[12px] font-[700] hover:bg-[#2d3091] hover:text-white hover:transition-all ease-in-out delay-150"
+              onClick={() => router.push("/gallery")}
             >
               EXPLORE OUR WORKS
             </button>
           </div>
-          <div className="w-2/3 ml-10 relative ">
+          <div className="w-2/3 hidden lg:block ml-10 relative ">
             <div className="carousel-section">
               <div className="pl-16 ">
                 <CarouselComponent />
@@ -53,9 +56,9 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className=" bg-[#fff] py-16">
-        <div className="w-[800px] mx-auto">
-          <h1 className="text-[32px] font-[500] text-[#1F2128] mb-[20px] text-center">
+      <section className="px-10 lg:px-0  bg-[#fff] py-16">
+        <div className="lg:w-[800px] mx-auto">
+          <h1 className="text-[25px] md:text-[32px] font-[500] text-[#1F2128] mb-[20px] text-center">
             Welcome and thank you for visiting the Del-Fur Ltd website
           </h1>
           <div className="">
@@ -95,9 +98,9 @@ const Home = () => {
 
       <section className="min-h-[400px] bg-[url(../assets/images/parallax2.jpg)] flex  parallax-section relative">
         <Overlay color="#000" opacity={0.7} />
-        <div className="w-[1170px]  mx-auto py-16" style={{ zIndex: 200 }}>
-          <div className="w-[800px] mx-auto">
-            <h1 className="text-[32px] font-[500] text-[#fff] mb-[20px] text-center">
+        <div className="lg:w-[1170px]  mx-auto py-16" style={{ zIndex: 200 }}>
+          <div className="lg:w-[800px] px-10 lg:px-0 mx-auto">
+            <h1 className="text-[25px] md:text-[32px] font-[500] text-[#fff] mb-[20px] text-center">
               Our Achievements
             </h1>
             <p className="text-[16px] font-[500] text-[#fff] mb-[10px] text-center">
@@ -114,7 +117,7 @@ const Home = () => {
               Program (TRIP) between 1999 and 2001.
             </p>
           </div>
-          <div className="flex items-center justify-around text-white mt-10 mb-6">
+          <div className="flex flex-col md:flex-row text-center space-y-6 md:space-y-0 items-center justify-around text-white mt-10 mb-6">
             <div>
               <h1 className="text-[35px] font-[600]">
                 <CountUp start={0} end={750} duration={3} /> +
@@ -138,12 +141,12 @@ const Home = () => {
       </section>
       <TeamSection />
       <section className="bg-white">
-        <div className="w-[800px] mx-auto pt-10 pb-16 relative">
+        <div className="lg:w-[800px] mx-auto pt-10 pb-16 px-10 lg:px-0 relative">
           <div className="absolute opacity-25 -left-24">
             <IconQuote size={100} />
           </div>
           <div>
-            <h1 className="text-[32px] font-[500] text-[#1F2128] mb-[20px] text-center">
+            <h1 className="text-[25px] md:text-[32px] font-[500] text-[#1F2128] mb-[20px] text-center">
               Testimonials
             </h1>
             <p className="text-[16px] font-[400] text-[#606060] text-left">
@@ -168,15 +171,15 @@ const Home = () => {
               Simon K. A. Ayivi <br />
               Founder & Chairman, Spero Foundation
             </p>
-            <div className="absolute bottom-16 opacity-25 -right-20">
+            <div className="hidden lg:absolute bottom-16 opacity-25 -right-20">
               <IconQuote size={100} />
             </div>
           </div>
         </div>
       </section>
       <section className="min-h-[200px] bg-[#46AAE4] pt-12 text-white">
-        <div className="w-[800px] mx-auto">
-          <h1 className="text-[32px] font-[500] text-white mb-[20px] text-center">
+        <div className="lg:w-[800px] mx-auto">
+          <h1 className="text-[25px] md:text-[32px] font-[500] text-white mb-[20px] text-center">
             Our Partners
           </h1>
           <div className="mt-16">
@@ -185,9 +188,9 @@ const Home = () => {
         </div>
       </section>
       <section className="min-h-[700px] ">
-        <div className="w-[800px] mx-auto pt-14 pb-20">
+        <div className="lg:w-[800px] mx-auto pt-14 pb-20 px-10 lg:px-0">
           <div>
-            <h1 className="text-[32px] font-[500] text-[#1F2128]  text-center">
+            <h1 className="text-[25px] md:text-[32px] font-[500] text-[#1F2128]  text-center">
               Health and Safety
             </h1>
             <p className="text-[16px] font-[500] text-[#606060]  py-2 text-center">
@@ -245,8 +248,8 @@ const Home = () => {
       </section>
 
       <section className="min-h-[200px] bg-white">
-        <div className="w-[1170px] mx-auto py-14">
-          <h1 className="text-[32px] font-[500] text-[#1F2128] mb-[20px] text-center">
+        <div className="lg:w-[1170px] mx-auto py-14">
+          <h1 className="text-[25px] md:text-[32px] font-[500] text-[#1F2128] mb-[20px] text-center">
             Contact Us
           </h1>
           <ContactSection />

@@ -5,11 +5,11 @@ import React from 'react'
 const MissionSection = () => {
   return (
     <>
-         <section className=" min-h-[400px] bg-[url(../assets/images/parallax.jpg)] parallax-section relative">
+         <section className=" md:min-h-[400px] bg-[url(../assets/images/parallax.jpg)] parallax-section relative">
       <Overlay color="#000" opacity={0.7} />
-      <div className="w-[1170px]  mx-auto py-16 relative" style={{ zIndex: 200 }}>
-      <div className="w-[800px] mx-auto relative">
-            <h1 className="text-[32px] font-[500] text-[#fff] mb-[20px] text-center">
+      <div className="w-full lg:w-[1170px]  mx-auto py-16 relative" style={{ zIndex: 200 }}>
+      <div className="lg:w-[800px] mx-auto px-10 lg:px-0 relative">
+            <h1 className="text-[25px] md:text-[32px]  font-[500] text-[#fff] mb-[20px] text-center">
             Our Mission
             </h1>
             <p className="text-[16px] font-[500] text-[#fff] mb-[10px] text-center">
@@ -23,7 +23,7 @@ const MissionSection = () => {
           </div>
       </section>
       <section className="min-h-[370px]">
-        <div className="w-[1170px] mx-auto -mt-32 ">
+        <div className="lg:w-[1170px] mx-auto mt-20 md:-mt-32 px-10 lg:px-0">
           <SimpleGrid
             cols={3}
             spacing="xl"

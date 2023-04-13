@@ -9,10 +9,10 @@ const WhoWeAreSection = ({img}: any) => {
 
   return (
     <>
-       <section className="min-h-[600px] w-full py-20">
-        <div className="w-[1170px] mx-auto flex">
-          <div className="w-1/2 pr-20">
-            <h1 className="text-[32px] font-[600] text-[#1F2128]">
+       <section className="lg:min-h-[600px] w-full py-20">
+        <div className="lg:w-[1170px] mx-auto flex">
+          <div className="lg:w-1/2 lg:pr-20 px-10 lg:px-0">
+            <h1 className="text-[25px] md:text-[32px] mb-4 md:md-0 font-[600] text-[#1F2128]">
              Who We Are
             </h1>
             <p className="text-[16px] font-[400] text-[#606060] mb-[25px]">
@@ -54,7 +54,7 @@ const WhoWeAreSection = ({img}: any) => {
               </List>
             </div>
             <div className="mt-6">
-            <h1 className="text-[32px] font-[600] text-[#1F2128] mb-[10px]">
+            <h1 className="text-[25px] md:text-[32px] font-[600] text-[#1F2128] mb-[10px]">
              Core Values
             </h1>
             <div>
@@ -127,7 +127,7 @@ const WhoWeAreSection = ({img}: any) => {
             </div>
             </div>
           </div>
-          <div className="w-1/2">
+          <div className="hidden lg:block w-1/2">
             <Image
               src={img}
               alt=""

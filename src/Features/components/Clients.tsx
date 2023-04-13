@@ -16,7 +16,7 @@ export const Client = () => {
       align="start"
       breakpoints={[
         { maxWidth: 'md', slideSize: '50%' },
-        { maxWidth: 'sm', slideSize: '100%', slideGap: 0 },
+        { maxWidth: 'sm', slideSize: '40%', slideGap: 0 },
       ]}
 
       plugins={[autoplay.current]}

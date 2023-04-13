@@ -89,7 +89,7 @@ const ContactForm = () => {
     const { classes } = useStyles();
   return (
     <>
-      <form className={classes.form} onSubmit={(event) => event.preventDefault()}>
+      <form className={`${classes.form} mx-10 md:mx-0`} onSubmit={(event) => event.preventDefault()} >
             <Text fz="lg" fw={700} className={classes.title}>
               Get in touch
             </Text>

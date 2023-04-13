@@ -51,7 +51,7 @@ const FilterButtons = ({data, setfilteredCat}: any) => {
 
   return (
     <>
-    <div className='space-x-4 text-center'>
+    <div className='space-x-4 text-center px-10 lg:px-0'>
       {
         categories?.map((category) => (
             <>

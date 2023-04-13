@@ -33,8 +33,8 @@ const Footer = () => {
     const { classes } = useStyles();
   return (
     <>
-     <div className={classes.footer}>
-      <div className={`${classes.inner} w-[1170px] mx-auto`}>
+     <div className={`${classes.footer} `}>
+      <div className={`${classes.inner}  lg:w-[1170px] px-10 lg:px-0 mx-auto`}>
        {/* Text Here */}
        <Text color="dimmed" size="sm">
        © Copyright Del-Fur Limited. All Right Reserved

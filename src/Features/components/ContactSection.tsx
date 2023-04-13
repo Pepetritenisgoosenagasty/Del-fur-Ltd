@@ -118,7 +118,7 @@ import ContactForm from './ContactForm';
     return (
       <Paper >
         <div className={classes.wrapper}>
-          <div className={classes.contacts}>
+          <div className={`${classes.contacts} mx-10 lg:md-0`}>
             <Text fz="lg" fw={700} className={classes.title} c="#fff">
               Contact information
             </Text>
@@ -126,7 +126,6 @@ import ContactForm from './ContactForm';
             <div className='space-y-6'>
             <List
                 style={montserrat.style}
-                
                 spacing="xs"
                 size="sm"
                 center

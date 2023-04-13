@@ -20,9 +20,15 @@ const ImagesComponents = ({data, galleryID}) => {
         };
       }, []);
   return (<>
-  <div className='pswp-gallery' id={galleryID}>
+  <div className='pswp-gallery px-10 lg:px-0' id={galleryID}>
 
-    <SimpleGrid cols={4} spacing="xl" >
+    <SimpleGrid  cols={4}
+            spacing="xl"
+            breakpoints={[
+              { maxWidth: "62rem", cols: 3, spacing: "md" },
+              { maxWidth: "48rem", cols: 2, spacing: "sm" },
+              { maxWidth: "36rem", cols: 1, spacing: "sm" },
+            ]}>
         {data?.map((image, index) => (
             <motion.div layout initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} transition={{ duration: 0.5}} key={image.id} className="image-container cursor-pointer" >
                 <a
