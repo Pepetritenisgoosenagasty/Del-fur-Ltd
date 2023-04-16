@@ -5,7 +5,7 @@ import React from 'react'
 const MissionSection = () => {
   return (
     <>
-         <section className=" md:min-h-[400px] bg-[url(../assets/images/parallax.jpg)] parallax-section relative">
+         <section className=" md:min-h-[400px] bg-[url(https://res.cloudinary.com/dhzzfn7sr/image/upload/v1681213272/BEDS/55048288-1903-4cc9-bc0c-16d5eed248e6_ho0bej.jpg)] parallax-section relative">
       <Overlay color="#000" opacity={0.7} />
       <div className="w-full lg:w-[1170px]  mx-auto py-16 relative" style={{ zIndex: 200 }}>
       <div className="lg:w-[800px] mx-auto px-10 lg:px-0 relative">

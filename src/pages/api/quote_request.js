@@ -17,7 +17,7 @@ export default async (req, res) => {
   try {
     await transporter.sendMail({
       from: `${email}`,
-      to: "monogasppar@gmail.com",
+      to: `${process.env.NEXT_PUBLIC_SMTP_USER}`,
       subject: `Contact form submission from ${email}`,
       html: `<p>Request For Quote Form Submission</p>
         <p><strong>Email: </strong> ${email}</p>

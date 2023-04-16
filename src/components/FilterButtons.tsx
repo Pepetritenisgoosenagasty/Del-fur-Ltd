@@ -18,45 +18,49 @@ const FilterButtons = ({ data, setfilteredCat }: any) => {
       id: 3,
       name: "Kitchen",
     },
-    {
-      id: 4,
-      name: "Manual Organs",
-    },
+    // {
+    //   id: 4,
+    //   name: "Manual Organs",
+    // },
     {
       id: 5,
       name: "Beds",
     },
+    // {
+    //   id: 6,
+    //   name: "Storeroom Shelves",
+    // },
+    // {
+    //   id: 7,
+    //   name: "Door Locks",
+    // },
+    // {
+    //   id: 8,
+    //   name: "Book Shelves",
+    // },
+    // {
+    //   id: 9,
+    //   name: "Console Table",
+    // },
+    // {
+    //   id: 10,
+    //   name: "Ceiling Beams",
+    // },
+    // {
+    //   id: 11,
+    //   name: "Pigeon Holes",
+    // },
+    // {
+    //   id: 12,
+    //   name: "Windows",
+    // },
+    // {
+    //   id: 13,
+    //   name: "Vanity",
+    // },
     {
       id: 6,
-      name: "Storeroom Shelves",
-    },
-    {
-      id: 7,
-      name: "Door Locks",
-    },
-    {
-      id: 8,
-      name: "Book Shelves",
-    },
-    {
-      id: 9,
-      name: "Console Table",
-    },
-    {
-      id: 10,
-      name: "Ceiling Beams",
-    },
-    {
-      id: 11,
-      name: "Pigeon Holes",
-    },
-    {
-      id: 12,
-      name: "Windows",
-    },
-    {
-      id: 13,
-      name: "Vanity",
+      name: "Others",
     },
   ];
 

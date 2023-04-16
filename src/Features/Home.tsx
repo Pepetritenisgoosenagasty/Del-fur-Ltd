@@ -96,7 +96,7 @@ const Home = () => {
       <MissionSection />
       <WhoWeAreSection img="stand.jpeg" />
 
-      <section className="min-h-[400px] bg-[url(../assets/images/parallax2.jpg)] flex  parallax-section relative">
+      <section className="min-h-[400px] bg-[url(https://res.cloudinary.com/dhzzfn7sr/image/upload/v1681213226/4%20MANUAL%20ORGANS/2f6d57b5-e045-488f-b726-ef39a4003d4a_ynubr0.jpg)] flex  parallax-section relative">
         <Overlay color="#000" opacity={0.7} />
         <div className="lg:w-[1170px]  mx-auto py-16" style={{ zIndex: 200 }}>
           <div className="lg:w-[800px] px-10 lg:px-0 mx-auto">
@@ -180,7 +180,7 @@ const Home = () => {
       <section className="min-h-[200px] bg-gray-50 pt-12 gallery">
         <div className="lg:w-[800px] mx-auto">
           <h1 className="text-[25px] md:text-[32px] font-[500] mb-[20px] text-center">
-            Our Partners
+            Our Clients
           </h1>
           <div className="mt-16">
             <Client />

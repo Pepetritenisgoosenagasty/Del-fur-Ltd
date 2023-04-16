@@ -37,11 +37,8 @@ const Gallery = () => {
           <p className='text-center text-[20px] font-[500] mb-4 px-10 lg:px-0'>Take a look at some of our customized products built for companies and institutions</p>
          <FilterButtons data={imageGallery} setfilteredCat={setfilteredCat}/>
          <div className='py-12'>
-        
-
             <AnimatePresence>
             <ImagesComponents data={filteredCat} galleryID="my-test-gallery"/>
-
             </AnimatePresence>
         
          </div>

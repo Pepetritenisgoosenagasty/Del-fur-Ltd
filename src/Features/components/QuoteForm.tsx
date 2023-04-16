@@ -1,4 +1,4 @@
-import { Box, LoadingOverlay, Select, Text, TextInput, Textarea } from '@mantine/core'
+import { Box, Loader, LoadingOverlay, Select, Text, TextInput, Textarea } from '@mantine/core'
 import { useForm } from '@mantine/form'
 import { closeAllModals } from '@mantine/modals'
 import React, { useState } from 'react'
@@ -39,20 +39,26 @@ const QuoteForm = () => {
 
   return (
     <>
-   <Box maw={400} pos="relative">
-        <LoadingOverlay visible={isLoading} overlayBlur={2} />
-        {/* ...other content */}
-      </Box>
+
+        
+
        <Text size="sm" mb="md" px={14}>
           Would you like to request for a quote about a particular furniture?
           Just submit your details and we’ll be in touch shortly. You can also
           email us if you would prefer.
         </Text>
-        <form  onSubmit={form.onSubmit(handleSubmit)}>
+       {isLoading ? (
+         <div className='w-full py-20 flex'>
+         <Loader color="dark" m="auto"/>
+      </div>
+       ) : (
+        <>
+            <form  onSubmit={form.onSubmit(handleSubmit)}>
           <div className="space-y-4 px-4">
             <Select
               label="Quote"
               placeholder="Select a quote"
+              required
               withAsterisk
               data={[
                 { value: "Renovation", label: "Renovation" },
@@ -66,18 +72,21 @@ const QuoteForm = () => {
               placeholder="Your email"
               data-autofocus
               withAsterisk
+              required
               {...form.getInputProps('email')}
             />
             <TextInput
               label="Job Type"
               placeholder="Job Type"
               data-autofocus
+              required
               {...form.getInputProps('job_type')}
             />
             <Select
               label="Request Status"
               placeholder="How soon"
               withAsterisk
+              required
               data={[
                 { value: "Budgeting", label: "Budgeting" },
                 { value: "Working Progress", label: "Working Progress" },
@@ -88,6 +97,7 @@ const QuoteForm = () => {
             <Textarea
               placeholder="Your location"
               label="Your Location"
+              required
               withAsterisk
               {...form.getInputProps('location')}
             />
@@ -100,6 +110,8 @@ const QuoteForm = () => {
           </button>
            </div>
         </form>
+        </>
+       )}
     </>
   )
 }
