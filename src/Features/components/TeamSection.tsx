@@ -34,7 +34,7 @@ const TeamSection = () => {
                 <TeamCard img="/MD.jpg" name="Mr. Derek Edem Amexo" position="Managing Director"/>
               </div>
               <div>
-                <TeamCard img="/administrators.jpg" name="Administrators" position=""/>
+                <TeamCard img="/admins.jpg" name="Administrators" position=""/>
               </div>
               <div>
                 <TeamCard img="/Supervisor.jpg" name="Supervisor" position=""/>
