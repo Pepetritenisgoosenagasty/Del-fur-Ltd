@@ -1,15 +1,54 @@
-import { Select, Text, TextInput, Textarea } from '@mantine/core'
-import React from 'react'
+import { Box, LoadingOverlay, Select, Text, TextInput, Textarea } from '@mantine/core'
+import { useForm } from '@mantine/form'
+import { closeAllModals } from '@mantine/modals'
+import React, { useState } from 'react'
 
 const QuoteForm = () => {
+
+    const [isLoading, setIsLoading] = useState(false)
+
+    const form = useForm()
+
+  const handleSubmit = async(value) => {
+    setIsLoading(true)
+   try {
+    const res = await fetch(`/api/quote_request`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        quote: value.quote,
+        email: value.email,
+        job_type: value.job_type,
+        request_status: value.request_status,
+        location: value.location
+      }),
+    });
+    
+    if(res?.ok) {
+        alert("Qote Submitted Successfully")
+        setIsLoading(false)
+        closeAllModals()
+        form.reset()
+    }
+   } catch (error) {
+    console.log(error)
+   }
+  }
+
   return (
     <>
+   <Box maw={400} pos="relative">
+        <LoadingOverlay visible={isLoading} overlayBlur={2} />
+        {/* ...other content */}
+      </Box>
        <Text size="sm" mb="md" px={14}>
           Would you like to request for a quote about a particular furniture?
           Just submit your details and we’ll be in touch shortly. You can also
           email us if you would prefer.
         </Text>
-        <form>
+        <form  onSubmit={form.onSubmit(handleSubmit)}>
           <div className="space-y-4 px-4">
             <Select
               label="Quote"
@@ -20,17 +59,20 @@ const QuoteForm = () => {
                 { value: "New Project", label: "New Project" },
                 { value: "Existing Project", label: "Existing Project" },
               ]}
+              {...form.getInputProps('quote')}
             />
             <TextInput
               label="Your email"
               placeholder="Your email"
               data-autofocus
               withAsterisk
+              {...form.getInputProps('email')}
             />
             <TextInput
               label="Job Type"
               placeholder="Job Type"
               data-autofocus
+              {...form.getInputProps('job_type')}
             />
             <Select
               label="Request Status"
@@ -41,11 +83,13 @@ const QuoteForm = () => {
                 { value: "Working Progress", label: "Working Progress" },
                 { value: "Very Urgent", label: "Very Urgent" },
               ]}
+              {...form.getInputProps('request_status')}
             />
             <Textarea
               placeholder="Your location"
               label="Your Location"
               withAsterisk
+              {...form.getInputProps('location')}
             />
           </div>
            <div className="mt-10 mb-4 mx-4">

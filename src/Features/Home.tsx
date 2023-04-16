@@ -30,8 +30,8 @@ const Home = () => {
               have been perfected over centuries.
             </p>
             <button
-              style={montserrat.style}
-              className="px-[25px] py-[15px] rounded-md mt-4 text-[#2d3091] border border-[#2d3091] text-[12px] font-[700] hover:bg-[#2d3091] hover:text-white hover:transition-all ease-in-out delay-150"
+              // style={montserrat.style}
+              className={`${montserrat.className} px-[25px] py-[15px] rounded-md mt-4 text-[#2d3091] border border-[#2d3091] text-[12px] font-[700] hover:bg-[#2d3091] hover:text-white hover:transition-all ease-in-out delay-150`}
               onClick={() => router.push("/gallery")}
             >
               EXPLORE OUR WORKS
@@ -177,9 +177,9 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="min-h-[200px] bg-[#46AAE4] pt-12 text-white">
+      <section className="min-h-[200px] bg-gray-50 pt-12 gallery">
         <div className="lg:w-[800px] mx-auto">
-          <h1 className="text-[25px] md:text-[32px] font-[500] text-white mb-[20px] text-center">
+          <h1 className="text-[25px] md:text-[32px] font-[500] mb-[20px] text-center">
             Our Partners
           </h1>
           <div className="mt-16">

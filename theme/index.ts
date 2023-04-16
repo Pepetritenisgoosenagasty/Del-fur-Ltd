@@ -40,5 +40,24 @@ export const theme: any = {
         '&:hover img': {
           transform: "scale(1.1)",
         }
-      }
+      },
+
+      ".gallery": {
+        "img": {
+          objectFit: "contain !important"
+        }
+      },
+        '.bm-burger-button': {
+        display: 'none'
+      },
+      [theme.fn.smallerThan('lg')]: {
+        '.bm-burger-button': {
+        display: 'block'
+      },
+      },
+
+     
+
+     
+      
     })}  
