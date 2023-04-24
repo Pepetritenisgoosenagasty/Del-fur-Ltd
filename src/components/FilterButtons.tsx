@@ -30,10 +30,10 @@ const FilterButtons = ({ data, setfilteredCat }: any) => {
     //   id: 6,
     //   name: "Storeroom Shelves",
     // },
-    // {
-    //   id: 7,
-    //   name: "Door Locks",
-    // },
+    {
+      id: 7,
+      name: "Door Locks",
+    },
     // {
     //   id: 8,
     //   name: "Book Shelves",
