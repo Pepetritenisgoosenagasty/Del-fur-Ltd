@@ -8,7 +8,7 @@ const FilterButtons = ({ data, setfilteredCat }: any) => {
     },
     {
       id: 1,
-      name: "Doors",
+      name: "Door",
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const FilterButtons = ({ data, setfilteredCat }: any) => {
     // },
     {
       id: 5,
-      name: "Beds",
+      name: "Bed",
     },
     // {
     //   id: 6,
@@ -32,7 +32,7 @@ const FilterButtons = ({ data, setfilteredCat }: any) => {
     // },
     {
       id: 7,
-      name: "Door Locks",
+      name: "Door Lock",
     },
     // {
     //   id: 8,
